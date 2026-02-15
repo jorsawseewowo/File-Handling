@@ -1,0 +1,7 @@
+file=open('Codingal.txt', 'r')
+print(file.read())
+file.close()
+file=open('Codingal.txt', 'w')
+file.write("Hi there! This is the Codingal")
+file=open('Codingal.txt', 'a')
+file.write(" Hi there! This is the Codingal")
