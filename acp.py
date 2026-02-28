@@ -1,0 +1,20 @@
+file_read = open('students.txt', 'r')
+print("File in Read Mode -")
+print(file_read.read())
+file_read.close()
+
+file_write = open('students.txt', 'w')
+file_write.write("Roy - Favorite Subject: Math\n")
+file_write.write("Alice - Favorite Subject: Science\n")
+file_write.write("Bob - Favorite Subject: English\n")
+file_write.close()
+
+file_append = open('students.txt', 'a')
+file_append.write("\nSara - Favorite Subject: History\n")
+file_append.write("Tom - Favorite Subject: Geography\n")
+file_append.close()
+
+file_read = open('students.txt', 'r')
+print("Updated Student Records -")
+print(file_read.read())
+file_read.close()
